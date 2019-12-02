@@ -1,0 +1,153 @@
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>layout 后台大布局 - Layui</title>
+<link rel="stylesheet" href="../src/css/layui.css">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">layui 后台布局</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">控制台</a></li>
+      <li class="layui-nav-item"><a href="">商品管理</a></li>
+      <li class="layui-nav-item"><a href="">用户</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">邮件管理</a></dd>
+          <dd><a href="">消息管理</a></dd>
+          <dd><a href="">授权管理</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="http://t.cn/RCzsdCq" class="layui-nav-img">
+          贤心
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">基本资料</a></dd>
+          <dd><a href="">安全设置</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+   <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">所有商品</a>
+          <dl class="layui-nav-child">
+            <dd><a href="categories.html">分类展示</a></dd>
+            <dd><a href="form.html">分类添加</a></dd>
+            
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">联系我们</a>
+          <dl class="layui-nav-child">
+            <dd><a href="user_show.html.html">用户展示</a></dd>
+            <dd><a href="user_add.html">用户添加</a></dd>
+            
+          </dl>
+        </li>
+
+      </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">文章管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="wen_show">文章展示</a></dd>
+            <dd><a href="wen_add">文章添加</a></dd>
+            
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">广告位管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="guang_show">广告位展示</a></dd>
+            <dd><a href="guang_add">广告位添加</a></dd>
+            
+          </dl>
+        </li>
+
+         <li class="layui-nav-item">
+          <a href="javascript:;">广告管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="gao_show">广告展示</a></dd>
+            <dd><a href="gao_add">广告添加</a></dd>
+            
+          </dl>
+        </li>
+
+          <li class="layui-nav-item">
+          <a href="javascript:;">分类管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="type_show">分类展示</a></dd>
+            <dd><a href="type_add">分类添加</a></dd>
+            
+          </dl>
+        </li>
+
+         <li class="layui-nav-item">
+          <a href="javascript:;">轮廓图管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="img_show">轮廓图展示</a></dd>
+            <dd><a href="img_add">轮廓图添加</a></dd>
+            
+          </dl>
+        </li>
+
+        <li class="layui-nav-item">
+          <a href="javascript:;">导航管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="dao_show">导航展示</a></dd>
+            <dd><a href="dao_add">导航添加</a></dd>
+            
+          </dl>
+        </li>
+
+         <li class="layui-nav-item">
+          <a href="javascript:;">网站管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="wang_show">网站展示</a></dd>
+            <dd><a href="wang_add">网站添加</a></dd>
+            
+          </dl>
+        </li>
+
+        <li class="layui-nav-item"><a href="">云市场</a></li>
+        <li class="layui-nav-item"><a href="">发布商品</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">内容主体区域</div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    © layui.com - 底部固定区域
+  </div>
+</div>
+<script src="../src/layui.js"></script>
+<script>
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
